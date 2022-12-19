@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Redressed&family=Roboto:ital,wght@1,500&family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --text-color:rgba(36, 233, 85, 0.844);
+}
+html{
+    scroll-behavior: smooth;
+
+}
+/* reset code and comon code */
+.heading{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+    position: relative;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Bebas Neue', cursive;
+    font-family: 'Redressed', cursive;*/
+    font-family: 'Satisfy', cursive; 
+}
+h1{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+
+p{
+    line-height: 30px;
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom:10px;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    border: 2px solid var(--text-color);
+    margin-top: 0.5rem;;
+}
+.btn:hover{
+    background-color: var(--text-color);
+}
+.section-center{
+    padding: 50px 10%;
+}
+.shadow{
+    box-shadow: 3px 4px 5px rgba(99, 88, 88, 0.434),
+                -3px -4px 5px rgba(145, 140, 140, 0.434);
+}
+/* reset code and comon code */
+
+/* header section start */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    background-color: grey;
+    width: 100%;
+    min-height: 5vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.logo{
+    font-size: 1.9rem;
+    font-weight: bold;
+    letter-spacing:5px;
+}
+.logo span{
+    color: var(--text-color)
+}
+.icon{
+    font-size: 1.8rem;
+    display: none;
+}
+header .manu{
+    display: flex;
+}
+header .manu a{
+    display: block;
+    color:black;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+header .manu a:hover{
+    color: var(--text-color);
+}
+/* header section end */
+/* vaner section start */
+#vaner{
+    width: 100%;
+    min-height: 95vh;
+    background-image: url(foods-img/vaner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+.vaner-text h1{
+
+}
+.vaner-text h1 span{
+    color: var(--text-color);
+}
+.vaner-text p{
+    width: 50%;
+}
+.vaner-text a{
+   font-weight: bolder;
+   color:black;
+}
+.vaner-text a:hover{
+   background-color: var(--text-color);
+}
+/* vaner section end */
+ /* our dish section start*/
+ .dish{
+    background-color: darkgray;
+ }
+.dish-container{
+    width: 100%;
+}
+.dishes{
+    background-color:white;
+    margin: 15px;
+    padding: 10px 18px;
+    width: 23%;
+    float: left;
+    overflow: hidden;
+}
+.dishes img{
+width: 100%;
+height: 300px;
+display: block;
+text-align: center;
+transition: all 0.3s;
+}
+.dishes .titel,.price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.dishes h3,.price span{
+    font-size: 1.6rem;
+}
+.dishes .stars{
+  color: var(--text-color);
+  font-size: 1rem;
+}
+.price i{
+    padding: 15px;
+    background-color: var(--text-color);
+}
+.dishes img:hover{
+    transform: scale(1.3);
+}
+.dish-container::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+ /* our dish section end*/
+/* popular section start */
+.popular-conainer{
+}
+.popular-conainer::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* popular section start */
+/* about section start hear */
+.about-container{
+    display:flex;
+    background-color: darkgray; 
+    border-radius: 90px;
+    overflow: hidden;
+}
+.about-img{
+    flex-basis: 40%;
+}
+.abou-details{
+    flex-basis: 60%;
+    padding: 20px 60px;
+}
+.about-img img{
+    width: 100%;
+    height: 400px;
+}
+.abou-details h1{
+    color: white;
+}
+.abou-details p{   
+}
+/* about section end hear */
+/* footer section start hear */
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-content div{
+    margin: 10px 25px;
+    flex: 1;
+}
+.footer-content .logo2{
+    margin: 0;
+    font-size: 1.9rem;
+    font-weight: bold;
+    letter-spacing:5px;
+}
+.logo2 span{
+    color: var(--text-color)
+}
+.footer p{
+    text-align: center;
+    margin-top: 10px;
+}
+/* footer section start end */
+/* responsive start hear */
+ @media screen and (max-width:1000px){
+/* header responsive start hear */
+header{
+    padding: 20px 50px;
+    min-height: auto;
+}
+.icon{
+    display: block;
+}
+header .manu{
+    position: absolute;
+    top: 100%;
+    left:0%;
+    flex-direction: column;
+    background-color: grey;
+    width: 100%;
+    text-align: center;
+  
+}
+.hiden{
+    display: none;
+}
+header .manu a{ 
+    margin: 15px;
+}
+/* header responsive end hear */
+/* vaner responsive start */
+#vaner{
+    min-height: auto;
+}
+.vaner-text p{
+    width: 70%;
+}
+
+/* vaner responsive end */
+/* dish responsive start hear */
+.dishes{  
+    width: 45%;
+}
+
+.dishes h3,.price span{
+    font-size: 1.5rem;
+}
+/* dish responsive start end */
+/* about responsive start end */
+.abou-details{
+    padding-right: 15px;
+}
+/* about responsive start end */
+}
+
+@media screen and (max-width:768px){
+/* vaner responsive start */
+.vaner-text p{
+    width: 100%;
+}
+/* vaner responsive end */
+/* dish responsive start hear */
+.dishes{  
+    width: 100%;
+    padding: 20px 25px;
+}
+.dishes .stars{
+  font-size: 1.2rem;
+}
+.about-container{
+  flex-direction: column;
+}
+/* dish responsive start end */
+/* about responsive start sart */
+.abou-details{
+    padding:50px;
+}
+/* about responsive start end */
+/* footer responsive start hear */
+.footer-content{
+ flex-direction: column;
+}
+/* footer responsive start end */
+
+}
